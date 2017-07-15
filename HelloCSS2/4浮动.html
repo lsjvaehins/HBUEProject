@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>浮动</title>
+		<!--文档流-->
+		<!--按照html文档中，从上到下的顺序显示标签-->
+		
+		<!--脱离文档流-->
+		<!--从正常的文档流中，浮起来，也就不再符合从上到下的规则了-->
+		
+		<!--三个div标签，通过float: left属性的设置，浮动了起来，
+		也就是不再是正常的文档流的那一层的内容了，这一层叫做浮动层
+		而p标签还是会按照正常文档流的顺序，从上往下排列，而这个排列，
+		是在浮动层下面进行的，所以会看到三个div标签将p标签盖住的现象。
+		-->
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				float: left;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div style="background-color: red;">
+			
+		</div>
+		<div style="background-color: green;">
+			
+		</div>
+		<div style="background-color: blue;">
+			
+		</div>
+		<p style="background-color: darkgoldenrod; width: 300px; height: 200px;"></p>
+	</body>
+</html>

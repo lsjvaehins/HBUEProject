@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>演示绝对定位</title>
+	</head>
+	<body>
+		<!--position属性设置为absolute，这个div就被设置成了绝对定位
+			可以通过top, bottom, left, right属性来设置该元素的位置
+			
+			设置位置时，相对的是上一层含有绝对定位属性的父标签，
+			如果没有这种父标签，那么相对于body
+		-->
+		<div style="position: absolute; margin: 100px; background-color: lightcoral; width: 300px; height: 300px;">
+		<div style="width: 200px; height: 200px; background-color: red; position: absolute; left: 200px; top: 50px;">
+			
+		</div>
+		</div>
+		<div style="background: #0f0; height: 400px;"></div>
+	</body>
+</html>

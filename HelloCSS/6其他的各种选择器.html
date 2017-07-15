@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>其他的各种选择器</title>
+		<style type="text/css">
+			/*子代选择器*/
+			/*这个选择器，只会作用于第一层级的后代
+			 也就是儿子辈，是不会影响到孙子辈的*/
+			/*子代选择器使用“>”连接父选择器与子选择器*/
+			
+			/*如果子代或者后代没有设置特殊样式
+			 那么会被父标签设置的样式所支配
+			 比如下面的body，给body设置了文字颜色后
+			 body标签的所有后代标签都会被设置为绿色
+			 但是div中的p标签，和p中的span标签
+			 有自己的设置，那么就会按照他们自己的样式来显示*/
+			
+			div>p{
+				color: red;
+			}
+			/*只要span标签的父标签的class属性为add
+			 那么该span标签就会被设置成以下的样式*/
+			.add>span{
+				font-size: 30px;
+			}
+			
+			
+		</style>
+	</head>
+	<body style="color: green;">
+		<p>你好儿子</p>
+		<div>
+			<!--p就是div的儿子辈，也就是子代-->
+			<!--span是div的孙子辈，叫做后代-->
+			<p class="add">春江潮水连海平<span>，</span>海上明月共潮生</p>
+			<!--p与ol之间的关系，叫做兄弟同级-->
+			<ol>
+				<!--两个li之间，也是兄弟同级-->
+				<!--li是ol的子代-->
+				<!--li是div的后代-->
+				<li>我甚至连他的照片都没有</li>
+				<li>你好啊</li>
+			</ol>
+		</div>
+		<div>
+			<div>
+				<p>你不学习的啊</p>
+			</div>
+		</div>
+	</body>
+</html>

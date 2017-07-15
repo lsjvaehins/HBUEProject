@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*这就是内联式css*/
+			/*也就是直接将css代码，写在style标签中*/
+			
+			/*这是一个标签选择器*/
+			div{
+				background-color: #f88;
+			}
+			/*就近原则*/
+			/*写了两个div标签选择器*/
+			/*那么body中的div标签到底听谁的呢*/
+			/*div标签离哪个选择器更近，就听谁的*/
+			div{
+				background-color: #0f0;
+			}
+			
+			/*这是一个类选择器，类名为ppp*/
+			/*类选择器用.符号表示*/
+			/*类选择器是可以复用的
+			 多个标签的class属性可以是一样的，
+			 那么这些标签的css样式，就都是指定的类选择器的样式*/
+			/*类选择器的优先级是大于标签选择器的。*/
+			.ppp{
+				background-color: #00f;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>1</div>
+		<span class="ppp">我是内容</span>
+	</body>
+</html>

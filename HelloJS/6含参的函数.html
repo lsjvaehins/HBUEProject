@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//函数也可以有参数
+			//参数也是不需要写类型的
+			function t1 (p1,p2) {
+				var r = p1 + p2;
+				window.alert(r);
+			}
+//			t1(4);
+			var p3;
+			//一个整型的值1，加上一个未定义的变量p3，得到的是一个非数值NaN
+//			window.alert(1+p3);
+
+			//可变参数
+//			t1(4,5,6,7,8);
+			
+			//函数的返回值
+//			function t2 (p1,p2) {
+//				return p1*p2;
+//			}
+//			window.alert(t2(4,t2(5,t2(6,t2(7,8)))));
+		
+			function ttt () {
+				//定义在function内部的叫做局部变量
+				//定义在function外部的叫做全局变量
+				//局部变量作用于当前的ttt函数
+				//在ttt函数外面，是无法使用这个变量的
+				//局部变量具有局部作用域
+				//全局变量具有全局作用域
+				var 我是一个变量 = "我是这个变量的值";
+				//这里是默认使用window对象的alert函数
+				alert(我是一个变量);
+			}
+			ttt();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

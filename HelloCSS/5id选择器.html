@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*id选择器，使用#符号表示
+			 同一个html文件中，不可以存在相同的id属性
+			 也就是说id选择器只可以使用一次*/
+			#id1{
+				color: brown;
+			}
+			.class1{
+				color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--id选择器的优先级大于类选择器-->
+		<!--优先级：id选择器 > 类选择器 > 标签选择器-->
+		<div id="id1" class="class1">我是一个div</div>
+		
+	</body>
+</html>
